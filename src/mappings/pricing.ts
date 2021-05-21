@@ -4,10 +4,10 @@ import { BigDecimal, Address, BigInt } from '@graphprotocol/graph-ts/index'
 import { ZERO_BD, factoryContract, ADDRESS_ZERO, ONE_BD } from './helpers'
 
 const WBNB_ADDRESS = '0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c'
-const BUSD_WBNB_PAIR = '0x5C192278Bb23f4a9a3B262514473117FB7E635EF' //WBNB-BUSD
-const DAI_WBNB_PAIR = '0x926bD4bd92A1221eC3Ca43Dee9a8BB7E4fd3acD4' //DAI-WBNB
-const USDT_WBNB_PAIR = '0x465730a393847fcC5c01339b006c94FAbE0eEb1d' //USDT-WBNB
-const USDC_WBNB_PAIR = '0x472120f2f56F1e58Bd531a4a3bD4137B6B895f99' //USDC-WBNB
+const BUSD_WBNB_PAIR = '0x5c192278bb23f4a9a3b262514473117fb7e635ef' //WBNB-BUSD
+const DAI_WBNB_PAIR = '0x926bd4bd92a1221ec3ca43dee9a8bb7e4fd3acd4' //DAI-WBNB
+const USDT_WBNB_PAIR = '0x465730a393847fcc5c01339b006c94fabe0eeb1d' //USDT-WBNB
+const USDC_WBNB_PAIR = '0x472120f2f56f1e58bd531a4a3bd4137b6b895f99' //USDC-WBNB
 
 // dummy for testing
 export function getBnbPriceInUSD(): BigDecimal {
@@ -59,12 +59,12 @@ export function getBnbPriceInUSD(): BigDecimal {
 
 // token where amounts should contribute to tracked volume and liquidity
 let WHITELIST: string[] = [
-  '0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c', // WBNB
-  '0x1AF3F329e8BE154074D8769D1FFa4eE058B1DBc3', // DAI
-  '0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56', // BUSD
-  '0x55d398326f99059fF775485246999027B3197955', // USDT
-  '0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d', // USDC
-  '0xd8a1734945b9ba38eb19a291b475e31f49e59877' // SHARD
+  '0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c', // wbnb
+  '0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3', // dai
+  '0xe9e7cea3dedca5984780bafc599bd69add087d56', // busd
+  '0x55d398326f99059ff775485246999027b3197955', // usdt
+  '0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d', // usdc
+  '0xd8a1734945b9ba38eb19a291b475e31f49e59877' // shard
 ]
 
 /**
